@@ -681,6 +681,7 @@ namespace System.Linq.Dynamic
             void F(DateTime? x, DateTime? y);
             void F(DateTimeOffset? x, DateTimeOffset? y);
             void F(TimeSpan? x, TimeSpan? y);
+            void F(Version x, Version y);
         }
 
         interface IEqualitySignatures : IRelationalSignatures
@@ -778,6 +779,7 @@ namespace System.Linq.Dynamic
             typeof(DateTimeOffset),
             typeof(TimeSpan),
             typeof(Guid),
+            typeof(Version),
             typeof(Math),
             typeof(Convert),
 			typeof(System.Data.Objects.EntityFunctions)
